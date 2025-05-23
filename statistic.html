@@ -21,7 +21,20 @@
     <!-- fake-notification -->
     <link rel="stylesheet" href="temp/custom/resource/views/home/home4/alert/css/fake-notification-min.css">
     
-
+    <style>
+      .logo{
+        width: 30px;
+        height: 30px;
+      }
+      @media screen and (max-width: 768px) {
+        .header__row{
+          position: relative;
+        }
+        .logo{
+          position: absolute;
+        }
+      }
+    </style>
 
   </head>
   <body >
@@ -503,7 +516,7 @@ z-index: 9999;
         Amount: [10000, 2500,555,666,444,333,333],					
         Content: '[Varible1] from [Varible2] has just Earned <b>$[Amount]</b>.',
         // Timer
-        Show: ['stable', 5, 10],
+        Show: ['stable', 20, 100], 
         Close: 5,
         Time: [0, 60],
         // Notification style 
